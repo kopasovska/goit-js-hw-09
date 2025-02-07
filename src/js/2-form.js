@@ -14,8 +14,8 @@ debugger;
 const dataFromLocalStorage =
   JSON.parse(localStorage.getItem('feedback-form-state')) || {};
 
-refs.messageInput.value = dataFromLocalStorage.message;
-refs.emailInput.value = dataFromLocalStorage.email;
+refs.messageInput.value = dataFromLocalStorage.message ?? '';
+refs.emailInput.value = dataFromLocalStorage.email ?? '';
 
 refs.feedbackForm.addEventListener('input', handleInput);
 

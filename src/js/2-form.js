@@ -9,8 +9,6 @@ const refs = {
   messageInput: document.querySelector('textarea[name="message"]'),
 };
 
-debugger;
-
 const dataFromLocalStorage = JSON.parse(
   localStorage.getItem('feedback-form-state') || '{}'
 );
